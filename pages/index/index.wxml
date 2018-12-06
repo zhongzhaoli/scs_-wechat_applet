@@ -2,3 +2,35 @@
 <view class="header">
   <view class="title_text">兼职列表</view>
 </view>
+<view class="job_div">
+  <view wx:for="{{ job_adopt }}" class="job_list_div" wx:key="view">
+    <view class="flex_div pb_7">
+      <span class="job_title">{{ item.job_title }}</span>
+      <span class="color_red">¥{{ item.admin_change_money }} / {{ item.money_type }}</span>
+    </view>
+    <span class="job_place">{{ item.job_place }}</span>  
+    <view class="job_number flex_div">
+      <span>报名人数：{{ item.job_has_num }} / {{ item.job_num }}</span>
+      <view class="flex_div">
+        <view class="text_lock_div qy">企业认证</view>
+        <view class="text_lock_div cq" wx:if="{{ item.time_type === 'long' }}">长期</view>
+        <view class="text_lock_div dq" wx:if="{{ item.time_type === 'short' }}">短期</view>
+      </view>
+    </view>
+  </view>
+  <view wx:for="{{ job_over }}" class="job_list_div end_job" wx:key="view">
+    <view class="flex_div">
+      <span class="job_title">{{ item.job_title }}</span>
+      <span class="color_red">¥{{ item.admin_change_money }} / {{ item.money_type }}</span>
+    </view>
+    <span class="job_place">{{ item.job_place }}</span>  
+    <view class="job_number flex_div">
+      <span>报名人数：{{ item.job_has_num }} / {{ item.job_num }}</span>
+      <view class="flex_div">
+        <view class="text_lock_div qy">企业认证</view>
+        <view class="text_lock_div cq" wx:if="{{ item.time_type === 'long' }}">长期</view>
+        <view class="text_lock_div dq" wx:if="{{ item.time_type === 'short' }}">短期</view>
+      </view>
+    </view>
+  </view>
+</view>

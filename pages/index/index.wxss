@@ -1,3 +1,6 @@
+h1,h2,h3,h4,h5,h6{
+  margin-bottom:0;
+}
 .header{
   width:100%;
   height:80rpx;
@@ -6,7 +9,71 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  top:0;
+  left:0;
 }
 .title_text{
   font-size:35rpx;
+}
+.job_list_div{
+  width:100%;
+  padding:25rpx;
+  box-sizing: border-box;
+  border:1rpx solid #eaeaea;
+}
+.color_red{
+  color:red;
+}
+.flex_div{
+  font-size: 35rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pb_7{
+  padding-bottom: 7rpx;
+}
+.job_place{
+  font-size:25rpx;
+  color:#9c9c9c;
+}
+.job_number{
+  font-size:25rpx;
+  color:#9c9c9c;
+  padding-top:10rpx;
+}
+.end_job{
+  background:#f8f8f8;
+}
+.job_title{
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  max-width: 500rpx;
+}
+.text_lock_div{
+  font-size: 20rpx;
+  border-radius: 3px;
+  display: flex;
+  padding: 5rpx 8rpx;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5rpx;
+}
+.qy{
+  color: #2ebdea;
+  border: 1px solid #2ebdea;
+}
+.cq{
+  color: #ffc107;
+  border: 1px solid #ffc107;
+}
+.dq{
+  color: #1eb126;
+  border: 1px solid #1eb126;
+}
+.job_div{
+  margin-top:80rpx;
 }
