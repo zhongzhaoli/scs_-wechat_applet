@@ -1,0 +1,4 @@
+<!-- <modal modal-hidden="{{is_modal_Hidden}}" modal-msg="{{is_modal_Msg}}"/> -->
+<view class="header">
+  <view class="title_text">兼职列表</view>
+</view>

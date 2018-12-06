@@ -1,0 +1,9 @@
+<view class="profile_user_div">
+  <view class="user_message_div" wx:if="{{ hasUserInfo }}">
+    <image class="user_image" src="{{ userInfo.avatarUrl }}"></image>
+    <text>{{ userInfo.nickName }}</text>
+  </view>
+  <view class="user_login_div" wx:else>
+    <button open-type="getUserInfo" class="small_btn" bindgetuserinfo="onGotUserInfo">授权登录</button>
+  </view>
+</view>

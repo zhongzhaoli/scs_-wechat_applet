@@ -1,0 +1,27 @@
+.profile_user_div{
+  width:100%;
+  padding:20rpx 30rpx;
+  border-bottom:1px #eaeaea solid;
+  border-top:1px #eaeaea solid;
+}
+.user_message_div{
+  display: flex;
+  align-items: center;
+}
+.user_image{
+  width:80rpx;
+  height:80rpx;
+  border-radius: 50%;
+  margin-right:20rpx;
+}
+.user_message_div > text{
+  font-size:30rpx;
+}
+.user_login_div{
+  overflow: hidden;
+}
+.small_btn{
+  width:auto;
+  float:left;
+  font-size:30rpx;
+}
