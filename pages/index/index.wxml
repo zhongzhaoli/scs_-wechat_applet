@@ -1,12 +1,12 @@
 <!-- <modal modal-hidden="{{is_modal_Hidden}}" modal-msg="{{is_modal_Msg}}"/> -->
-<view class="loading_img" wx:if="{{ !job_adopt }}">
+<view class="loading" id="loading" wx:if="{{ loading }}">
   <image src="../images/loading_2.gif"></image>
 </view>
 <view class="header">
   <view class="title_text">兼职列表</view>
 </view>
 <view class="job_div">
-  <view wx:for="{{ job_adopt }}" class="job_list_div" wx:key="view">
+  <view wx:for="{{ job_adopt }}" class="job_list_div" wx:key="view" bindtap="to_Url" id="{{ item.id }}">
     <view class="flex_div pb_7">
       <span class="job_title">{{ item.job_title }}</span>
       <span class="color_red">¥{{ item.admin_change_money }} / {{ item.money_type }}</span>

@@ -14,6 +14,21 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
-module.exports = {
-  formatTime: formatTime
+const loading = that => {
+  that.setData({
+    loading: true
+  })
 }
+
+const close_dialog = that => {
+  that.setData({
+    loading: false
+  })
+}
+
+module.exports = {
+  formatTime: formatTime,
+  loading: loading,
+  close_dialog: close_dialog
+}
+

@@ -1,0 +1,6 @@
+<view class="loading" wx:if="{{ loading }}">
+  <image src="../images/loading_2.gif"></image>
+</view>
+<view class="header">
+  <view class="title_text">兼职内容详细</view>
+</view>
