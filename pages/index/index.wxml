@@ -1,4 +1,7 @@
 <!-- <modal modal-hidden="{{is_modal_Hidden}}" modal-msg="{{is_modal_Msg}}"/> -->
+<view class="loading_img" wx:if="{{ !job_adopt }}">
+  <image src="../images/loading_2.gif"></image>
+</view>
 <view class="header">
   <view class="title_text">兼职列表</view>
 </view>
