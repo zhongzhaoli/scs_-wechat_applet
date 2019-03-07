@@ -10,6 +10,20 @@ App({
     wx.login({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
+        success: res => {
+          // 发送 res.code 到后台换取 openId, sessionKey, unionId
+          if (res.code) {
+            const code_url = "https://api.weixin.qq.com/sns/jscode2session?appid=wx32337a4626fce0ff&secret=5d4f7566e5bf4f42a300b17bef1d8cd4&js_code=" + res.code + "&grant_type=authorization_code";
+            wx.request({
+              url: code_url,
+              data: {},
+              method: "GET",
+              success: function (res) {
+                console.log(res)
+              }
+            })
+          }
+        }
       }
     })
     // 获取用户信息

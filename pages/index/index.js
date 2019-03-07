@@ -2,7 +2,8 @@
 const api = require('../../api.js'); 
 //工具类
 const util = require('../../utils/util.js');
-
+//获取应用实例
+const app = getApp()
 Page({
   data: {
     job_over: "",
@@ -21,7 +22,7 @@ Page({
         job_over: mes.data.over,
         job_adopt: mes.data.adopt
       })
-    });
+    }); 
   },
   to_Url: function(event){
     wx.navigateTo({
